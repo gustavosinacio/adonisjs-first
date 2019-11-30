@@ -25,8 +25,6 @@ test('It should return JWT token when session created', async ({
     })
     .end();
 
-  console.log(response.body.token);
-
   response.assertStatus(200);
   assert.exists(response.body.token);
 });
